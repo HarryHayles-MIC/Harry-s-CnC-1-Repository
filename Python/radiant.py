@@ -5,6 +5,29 @@ score=0
 #program start
 print("welcome to my random number program\n")
 print("Generating a random number between 1 and 10 :",random.randint(1,10),"\n")
+
+#Exersize 1
+print("Now Lets Run Exersize 1, where we run a small prediction\n")
+oracle=random.randint(1,6)
+user_guess=int(input(f"What do you thing your luck is today? \n Please Enter a Number between 1 and 6, if you get it correct I will reveal the future:"))
+if oracle == 1 and user_guess == 1:
+    print("\nYou will have a great day")
+elif oracle == 2 and user_guess == 2:
+    print("\nYou will see a lucky star")
+elif oracle == 3 and user_guess == 3:
+    print("\nYou might get a winning ticket")
+elif oracle == 4 and user_guess == 4:
+    print("\nA Good Day to play lotto")
+elif oracle == 5 and user_guess == 5:
+    print("\nJust an ordinary day")
+elif oracle == 6 and user_guess == 6:
+    print("\nOr maybe not so..")
+elif user_guess != oracle :
+    print("\nThe Oracle will not reveal their answer, try again\n")
+
+#Exersize 2
+print("Now Lets Run Exersize 2, Lets see how good at math you are\n")
+
 #calcualte 2 numbers between 1 and 50
 num1=random.randint(1,50)
 num2=random.randint(1,50)
@@ -19,7 +42,7 @@ if user_ans == correct_ans :
 else:
     print("Incorrect. Correct answer is ",correct_ans)
 
-#Exersize 2
+
 rnum1=random.randint(1,20)
 rnum2=random.randint(1,20)
 rnum3=random.randint(1,20)
